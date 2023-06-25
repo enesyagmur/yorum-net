@@ -17,15 +17,21 @@ const Login = () => {
   const dispacth = useDispatch();
 
   const enter = () => {
-    console.log(data);
-    navigate("/home");
+    const result = data.filter(
+      (item) => item.name === inputName && item.password === inputPassword
+    );
+
+    if (result.length > 0) {
+      navigate("/home");
+    } else {
+      alert("Giriş başarısız");
+    }
   };
   const register = () => {
     if (inputName !== "" && inputPassword !== "") {
       dispacth(addUser({ name: inputName, password: inputPassword }));
     }
   };
-  console.log(data);
 
   return (
     <div className="login">

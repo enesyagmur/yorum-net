@@ -1,12 +1,13 @@
-:root{
-  --white:white;
-  --green: #3AD08F;
-  --purple: #695DE9;
-  --lightPurple:#B2C1F6;
-  --gray:#E4E7F3;
+:root {
+  --white: white;
+  --green: #3ad08f;
+  --purple: #695de9;
+  --lightPurple: #b2c1f6;
+  --gray: #e4e7f3;
+  --darkblue: #272635;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
