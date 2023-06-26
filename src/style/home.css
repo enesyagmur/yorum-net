@@ -3,4 +3,8 @@
   min-height: 1000px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.category {
+  width: 100%;
 }
